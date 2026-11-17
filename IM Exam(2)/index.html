@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URC Rugby Hub</title>
+    <link rel="preconnect" href="https://fonts.googleleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorgin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Oswald:wght@500;600&display=swap" 
+   rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main"> SKip to main content</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="URC Rugby Hub, home">
+             <span class="brand__title">United Rugby Championship</span>
+             </a>
+            <nv class="nav-top" aria-label="Main">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="fixtures.html">Fixtures &amp; Results</a></li>
+                    <li><a href= "standings.html">Standings</a></li>
+                </ul>
+            </nv>
+        </div>
+    </header>
+
+    <main id="main">
+    <h1 class="visually-hidden">United Rugby Championship 2026/27: the South African teams</h1>
+
+    <section class="section" aria-labelledby="next-title">
+        <div class="section__inner">
+            <h2 id="next-title">Next Match</h2>
+            <div id="next-match" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="snapshot-title">
+        <div class="section__inner">
+            <h2 id="snapshot-title">Standings Snapshot</h2>
+            <div id="standings-snapshot" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="links-title">
+        <div class="section__inner">
+            <h2 id="links-title">Team Quick-Links</h2>
+            <ul class="quick-links" id="quick-links"></ul>
+        </div>
+    </section>
+
+    <section class="section" aria-labelledby="results-title">
+        <div class="section__inner">
+            <h2 id="results-title">Recent Results</h2>
+            <div id="recent-results" aria-live="polite"></div>
+        </div>
+    </section>
+</main>
+
+    <footer class="site-footer">
+<p> Rugby Hub ©2026 </p>
+    </footer>
+
+    <nav class="nav-bottom" aria-label="main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="fixtures.html">Fixtures</a>
+        <a href="standings.html">Standings</a>
+        <a href="teams.html">Teams</a>
+    </nav>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script type="module" src="js/home.js"></script>
+</body>
+</html>

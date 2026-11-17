@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team · URC Rugby Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+            <a class="brand" href="index.html" aria-label="URC Rugby Hub, home">
+             <span class="brand__title">United Rugby Championship</span>
+             </a>
+            <nav class="nav-top" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fixtures.html">Fixtures &amp; Results</a></li>
+                    <li><a href="standings.html">Standings</a></li>
+                    <li><a href="teams.html" aria-current="page">Teams</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+       <section class="section" aria-labelledby="team-name">
+    <div class="section__inner">
+        <div class="team-banner" id="team-banner">
+            <div class="team-banner__crest" id="team-crest"></div>
+            <div class="team-banner__text">
+                <h1 id="team-name">Team</h1>
+                <p class="team-banner__tagline" id="team-sub"></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="section" aria-labelledby="about-title">
+            <div class="section__inner">
+                <a class="back-link" href="teams.html">← All teams</a>
+                <h2 id="about-title">About</h2>
+                <div id="team-info"></div>
+            </div>
+        </section>
+
+        <div id="team-live">
+            <section class="section" aria-labelledby="season-title">
+                <div class="section__inner">
+                    <h2 id="season-title">Season so far</h2>
+                    <div id="team-standing" aria-live="polite"></div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="upcoming-title">
+                <div class="section__inner">
+                    <h2 id="upcoming-title">Upcoming matches</h2>
+                    <div id="team-upcoming" aria-live="polite"></div>
+                </div>
+            </section>
+
+            <section class="section" aria-labelledby="latest-title">
+                <div class="section__inner">
+                    <h2 id="latest-title">Recent results</h2>
+                    <div id="team-results" aria-live="polite"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p> Rugby Hub ©2026 </p>
+    </footer>
+
+    <nav class="nav-bottom" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="fixtures.html">Fixtures</a>
+        <a href="standings.html">Standings</a>
+        <a href="teams.html" aria-current="page">Teams</a>
+    </nav>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="module" src="js/team.js"></script>
+</body>
+</html>

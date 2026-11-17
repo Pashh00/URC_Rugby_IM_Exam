@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixtures &amp; Results · URC Rugby Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/tokens.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="site-header__inner">
+             <a class="brand" href="index.html" aria-label="URC Rugby Hub, home">
+             <span class="brand__title">United Rugby Championship</span>
+             </a>
+            <nav class="nav-top" aria-label="Main">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fixtures.html" aria-current="page">Fixtures &amp; Results</a></li>
+                    <li><a href="standings.html">Standings</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="hero">
+            <div class="hero__inner">
+                <h1>Fixtures &amp; Results</h1>
+                <p class="hero__intro">Every match for the Bulls, Sharks, Stormers and Lions. All times are South African time (SAST).</p>
+            </div>
+        </section>
+
+        <section class="section" aria-label="Match list">
+            <div class="section__inner">
+                <div class="controls">
+                    <div class="segmented" role="group" aria-label="Show matches">
+                        <button type="button" data-view="upcoming" aria-pressed="true">Upcoming</button>
+                        <button type="button" data-view="results" aria-pressed="false">Results</button>
+                    </div>
+                    <div class="field">
+                        <label for="team-filter">Team</label>
+                        <select id="team-filter">
+                            <option value="all">All South African teams</option>
+                            <option value="250978">Bulls</option>
+                            <option value="257786">Sharks</option>
+                            <option value="529255">Stormers</option>
+                            <option value="253531">Lions</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="match-list" aria-live="polite"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p> Rugby Hub ©2026 </p>
+    </footer>
+
+    <nav class="nav-bottom" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="fixtures.html" aria-current="page">Fixtures</a>
+        <a href="standings.html">Standings</a>
+        <a href="teams.html">Teams</a>
+    </nav>
+      
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script type="module" src="js/fixtures.js"></script>
+</body>
+</html>

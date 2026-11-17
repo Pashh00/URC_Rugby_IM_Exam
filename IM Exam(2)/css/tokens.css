@@ -1,0 +1,59 @@
+ :root {
+  --color-bg: #EAEEF3;
+  --color-surface: #FFFDF8;
+  --color-row-alt: #F4F6F9;
+  --color-table-header: #E3E8EF;
+  --color-text: #0F1722;
+  --color-text-body: #2A3442;
+  --color-text-muted: #5B6675;
+  --color-border: #C3CAD4;
+  --color-control-border: #6B7A8F;
+  --color-primary: #1B2A41;
+  --color-primary-hover: #2F4A73;
+  --color-on-primary: #F4F6F9;
+  --color-live: #C93C3C;
+  --color-ft: #2E5F4E;
+  --color-win: #2E9E6B;
+  --color-win-text: #237A52;
+  --color-not-started: #E8A317;
+  --color-badge: #F4F6F9;
+  --color-on-badge: #0F1722;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2rem;
+  --space-6: 3rem;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-2xl: 2rem;
+  --text-3xl: 3rem;
+
+ --font-heading: "Oswald", "Arial Narrow", sans-serif;
+  --font-body: "Montserrat", sans-serif;
+
+  --container-max: 1200px;
+  --radius: 8px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #162641;
+    --color-surface: #1F3357;
+    --color-row-alt: #263D64;
+    --color-table-header: #1B2A41;
+    --color-text: #F4F6F9;
+    --color-text-body: #C3CAD4;
+    --color-text-muted: #A9B2C0;
+    --color-border: #44526F;
+    --color-control-border: #7487A3;
+    --color-primary: #1B2A41;
+    --color-primary-hover: #2F4A73;
+    --color-on-primary: #F4F6F9;
+  }
+}
