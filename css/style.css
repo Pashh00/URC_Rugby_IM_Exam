@@ -1219,3 +1219,45 @@ main{
     font-size: 0.9375rem;
   }
 }
+
+@media (max-width: 599px) {
+  .next-card {
+    padding: var(--space-2);
+    overflow: hidden;
+  }
+
+  .next-card .crest {
+    width: 56px;
+    height: 56px;
+  }
+
+  .next__team,
+  .next__middle {
+    min-width: 0;
+  }
+
+  .next__team {
+    font-size: 1rem;
+  }
+
+  .next__kickoff {
+    font-size: 1rem;
+    padding: var(--space-1) var(--space-2);
+    white-space: nowrap;
+  }
+}
+
+.nav-top a {
+  white-space: nowrap;
+}
+
+@media (min-width: 600px) and (max-width: 1023px) {
+  .nav-top a {
+    padding: var(--space-1) var(--space-2);
+    font-size: 0.9375rem;
+  }
+
+  .nav-top ul {
+    gap: var(--space-1);
+  }
+}
