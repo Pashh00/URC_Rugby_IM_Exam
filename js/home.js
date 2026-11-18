@@ -28,13 +28,7 @@ function findRecentResults(matches) {
 function showNextMatch(match) {
   nextMatchBox.innerHTML = `
     <div class="next-card">
-          <svg class="next__arc" viewBox="0 0 400 64" aria-hidden="true" focusable="false">
-           <path id="ball-path" d="M 40 58 Q 200 -30 360 58" fill="none" stroke="rgba(255,255,255,0.35)" stroke-width="2" stroke-dasharray="4 8"/>
-           <g id="ball" opacity="0">
-          <ellipse rx="13" ry="8" fill="#b5651d"/>
-          <path d="M-6 0h12M-3 -2v4M0 -2v4M3 -2v4" stroke="#ffffff" stroke-width="1.2" fill="none"/>
-        </g>
-      </svg>
+         
       <div class="next__team">${crestHtml(match.homeTeam)}<span class="next__name">${match.homeTeam.name}</span></div>
       <div class="next__middle">
         <span class="next__vs">VS</span>
