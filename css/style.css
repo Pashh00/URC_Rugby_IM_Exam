@@ -1261,3 +1261,7 @@ main{
     gap: var(--space-1);
   }
 }
+.next-card {
+  box-sizing: border-box;
+  border: 2px solid #4B6FA8;
+}
