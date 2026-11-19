@@ -73,7 +73,7 @@ export function showError(box, err, onRetry){
         const button = document.createElement("button");
         button.type = "button";
         button.className = "retry-button";
-        button.textContent = "Try-again";
+        button.textContent = "Try again";
         button.addEventListener("click", onRetry);
         box.querySelector(".state").appendChild(button);
     }
@@ -94,7 +94,7 @@ export function formatTime(isoDate){
         minute: "2-digit",
         hour12: false,
         timeZone:"Africa/Johannesburg"
-    }).format(new Date(isoDate)) + "SAST";
+    }).format(new Date(isoDate)) + " SAST";
 }
 
 export function isSaMatch(match){

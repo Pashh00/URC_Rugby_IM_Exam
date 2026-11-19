@@ -72,7 +72,7 @@ export function animateTabIndicator() {
     if (saved !== null) previous = Number(saved);
     sessionStorage.setItem("urc:tab", String(current));
   } catch (err) {
-    // storage blocked: just place the indicator without sliding
+    
   }
 
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

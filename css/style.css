@@ -411,7 +411,7 @@ main{
     flex: 1;
 }
 
-/*Her0*/
+/*Hero*/
 .hero{
     background: var(--color-primary);
     color: var(--color-on-primary);
@@ -471,7 +471,7 @@ main{
     object-fit: contain;
 }
 
-.crest--initals{
+.crest--initials{
     display: flex;
     align-items: center;
     justify-content: center;

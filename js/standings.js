@@ -54,6 +54,7 @@ async function loadStandings() {
     const rows = data.groups[0].standings.filter(row => SA_TEAMS[row.team.id]);
     if (rows.length > 0) {
       showTable(rows);
+      animateStandingsRows();
     } else {
       showEmpty(tableBox, "The standings aren't available yet.");
     }
@@ -61,7 +62,6 @@ async function loadStandings() {
     showError(tableBox, err, loadStandings);
   }
 }
-     
-      loadStandings();
-       showTable(rows);
-      animateStandingsRows(); 
+
+loadStandings();
+      
