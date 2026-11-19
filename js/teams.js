@@ -1,4 +1,4 @@
-
+import "./motion.js";
 import { TEAMS } from "./teams-data.js";
 import { crestHtml } from "./utilities.js";
 
